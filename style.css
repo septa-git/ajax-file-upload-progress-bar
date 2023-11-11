@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+#up-wrap {
+  width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#up-wrap h1 {
+  margin: 0 0 40px 0;
+  color: #333;
+}
+#up-progress,
+#up-bar,
+#up-percent {
+  height: 30px;
+}
+#up-progress {
+  position: relative;
+  background: #dddddd;
+  margin-bottom: 20px;
+}
+#up-bar {
+  background: #4CAF50;
+  width: 0;
+  transition: width 0.5s;
+}
+#up-percent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+}
+#up-file {
+  display: none;
+}
+#up-label {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  border: 1px solid #dfdfdf;
+  background: #296cd0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#up-file:disabled ~ #up-label {
+  background: #b1b1b1;
+  cursor: not-allowed;
+}
+#up-demo {
+  margin-top: 10px;
+  color: #666;
+}
